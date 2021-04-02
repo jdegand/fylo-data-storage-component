@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <script src="script.js" defer ></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="logo-div">
+      <img class="logo" src="images/logo.svg" alt="">
+      <div class="icons-row">
+        <div class="document-div">
+          <img src="images/icon-document.svg" alt="document">
+        </div>
+        <div class="folder-div">
+          <img src="images/icon-folder.svg" alt="folder">
+        </div>
+        <div class="upload-div">
+          <img src="images/icon-upload.svg" alt="upload">
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-div-container">
+
+      <div>You’ve used <span class="gigsUsed">0 GB</span> of your storage</div>
+
+      <div class="slider-div">
+        <div><input type="range" min="0" max="1000" step="1" value="0" id="slider"></div>
+        <div id="slideValue">
+          <span id="currentValue">500 </span><span class="gray-text"> GB left</span>
+        </div>
+        <div id="progressBar"></div>
+      </div>
+
+      <div class="labels">
+        <div>0 GB</div>
+        <div>1000 GB</div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
